@@ -136,13 +136,25 @@ Should I design the UI first or freestyle it? Thinking face
 
 **Day 14 | Friday, 14 January 2022**
 
+Decided to create a repo for this challenge to keep track of my progress.
 
+[https://github.com/deanha-com/100DaysOfCode](https://github.com/deanha-com/100DaysOfCode)
 
 ---
 
+**Day 15 | Saturday, 15 January 2022**
+
+Build a React App to parse data from the BFI REST API. 
+
+Seems to be working well, can do with some refactoring
+
+During this project, I found the useEffect hook very nice to use, but realized later on the console.log the API seems to be called twice. So had to look into why that is.. good practice though..
+
+https://github.com/deanha-com/bfi-app-react
+
+---
 
 <!-- 
-**Day 15 | Saturday, 15 January 2022**
 **Day 16 | Sunday, 16 January 2022**
 **Day 17 | Monday, 17 January 2022**
 **Day 18 | Tuesday, 18 January 2022**
