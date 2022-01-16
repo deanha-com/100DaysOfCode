@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Changa:wght@800&display=swap");
+
+* {
+  font-family: "Changa", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+  position: absolute;
+  width: 100%;
+  top: 29px;
+
+  background-color: #444;
+  background-image: linear-gradient(
+    51deg,
+    #ffffff 10%,
+    #51cfed 35%,
+    #2742c5 100%
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.artboard {
+  float: left;
+  position: relative;
+
+  width: 800px;
+  height: 800px;
+
+  /* width: 1920px;
+  height: 1080px; */
+  background: #f403032b;
+}
+
+.artboard > div {
+  /* width: 50px;
+    height: 50px;
+    min-width: 50px;
+    max-height: 50px; */
+  width: 605px;
+  width: 805px;
+  height: 640px;
+  position: absolute;
+  border-radius: 9999px;
+}
+
+.pink {
+  top: -179px;
+  left: 623px;
+  height: 752px !important;
+  width: 557px;
+  background: #d503ac6e;
+}
+
+.red {
+  background-color: #00b2ff8c;
+  top: 6%;
+  left: -30%;
+  height: 622px;
+  width: 557px;
+}
+
+.blue {
+  background-color: #6900ffad;
+  top: 288px;
+  left: -87px;
+  width: 867px;
+  height: 1082px;
+  transform: rotate3d(19, 14, 0, 48deg);
+}
+
+.green {
+  background-color: #ffc3005e;
+  top: 215px;
+  right: 207px;
+  position: absolute;
+  top: 140px;
+  right: -80px;
+}
+
+.overflow {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.blur {
+  filter: contrast(141) blur(63px) hue-rotate(334deg);
+  -webkit-filter: contrast(141) blur(63px) hue-rotate(334deg);
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.convert {
+  display: inline-block;
+  padding: 40px;
+  top: -42vh;
+  position: relative;
+  font-size: xx-large;
+}
+
+.selection {
+  width: 200px;
+  height: 200px;
+  background-color: #ffeb3b;
+  position: absolute;
+  cursor: move;
+  filter: invert(1);
+  mix-blend-mode: difference;
+  border-radius: 110px;
+  border: 40px solid red;
+}
+
+#canvas {
+  border: 1px solid #ffeb3b;
+}
+
+button {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  padding: 5px 15px;
+  font-weight: 400;
+  font-family: "OpenSans";
+  border: 0;
+  background: none;
+}
+
+button img {
+  height: 36px;
+}

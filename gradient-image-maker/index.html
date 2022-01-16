@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Maker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js" integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.js" integrity="sha512-wUa0ktp10dgVVhWdRVfcUO4vHS0ryT42WOEcXjVVF2+2rcYBKTY7Yx7JCEzjWgPV+rj2EDUr8TwsoWF6IoIOPg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+</head>
+
+<body>
+    <!-- <h1>Gradient Image Maker</h1> -->
+    <!-- <canvas id="canvas" width="800" height="800"></canvas> -->
+
+    <div class="container">
+        <!-- <div class="overflow">
+            <div class="artboard">
+                <div class="pink"></div>
+                <div class="red"></div>
+                <div class="blue"></div>
+                <div class="green"></div>
+            </div>
+        </div> -->
+        <!-- <div class="convert">👉</div> -->
+
+        <div id="capture"  class="overflow">
+            <div class="artboard blur">
+                <!-- <img src="./pawel-czerwinski-XQqd6JKDkSM-unsplash.jpg" alt="" width="100%" height="100%"> -->
+                <div class="pink"></div>
+                <div class="red"></div>
+                <div class="blue"></div>
+                <div class="green"></div>
+            </div>
+        </div>
+        
+    </div>
+    <button onclick="saveImage()"><img src="./file-download.png" alt=""></button>
+
+
+</body>
+<!-- https://codepen.io/javascriptacademy-stash/pen/porpeoJ -->
+
+<!-- 
+    https://github.com/tsayen/dom-to-image
+    https://github.com/eligrey/FileSaver.js/ 
+    https://app.streamlinehq.com/icons/streamline-light?search=download%2Bimg
+-->
+
+</html>
