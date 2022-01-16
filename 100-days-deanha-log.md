@@ -154,8 +154,15 @@ https://github.com/deanha-com/bfi-app-react
 
 ---
 
-<!-- 
 **Day 16 | Sunday, 16 January 2022**
+
+Seems like a lot of people are using [@freeCodeCamp](https://www.freecodecamp.org/) for their study and learning to code. So I decided to register and refresh my knowledge from the start. Lets go 👨‍💻
+
+Are there any other resources you use for learning to code?
+
+---
+
+<!-- 
 **Day 17 | Monday, 17 January 2022**
 **Day 18 | Tuesday, 18 January 2022**
 **Day 19 | Wednesday, 19 January 2022**
