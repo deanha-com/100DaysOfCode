@@ -182,8 +182,8 @@ They use the Pine Script language where you can create indicators/overlays & tra
 
 I was intrigued by this and took a dive into their docs and syntax.
 
-https://www.pinecoders.com/learning_pine_roadmap/
-https://www.tradingview.com/pine-script-reference/v5/
+- https://www.pinecoders.com/learning_pine_roadmap/
+- https://www.tradingview.com/pine-script-reference/v5/
 
 ---
 
