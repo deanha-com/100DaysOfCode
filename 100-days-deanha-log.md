@@ -174,8 +174,20 @@ It’s good to just take a `<br>`, enjoy the beauty of nature, and let your eyes
 
 ---
 
-<!-- 
 **Day 18 | Tuesday, 18 January 2022**
+
+Today I went a bit off track, was looking into TradingView and observing the charts. I stumbled upon the Pine Editor where you can write your own scripts. 
+
+They use the Pine Script language where you can create indicators/overlays & trading strategies...
+
+I was intrigued by this and took a dive into their docs and syntax.
+
+https://www.pinecoders.com/learning_pine_roadmap/
+https://www.tradingview.com/pine-script-reference/v5/
+
+---
+
+<!-- 
 **Day 19 | Wednesday, 19 January 2022**
 **Day 20 | Thursday, 20 January 2022**
 **Day 21 | Friday, 21 January 2022**
