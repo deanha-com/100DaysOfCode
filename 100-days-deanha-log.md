@@ -162,8 +162,19 @@ Are there any other resources you use for learning to code?
 
 ---
 
-<!-- 
 **Day 17 | Monday, 17 January 2022**
+
+Feel a bit burned out today, so took a long walk at the park. 🚶
+
+We’re staring into our screens too often in this modern day.
+
+It’s good to just take a `<br>`, enjoy the beauty of nature, and let your eyes focus at a different focal distance. 👀
+
+![](https://pbs.twimg.com/media/FJVlgRwWQAE4vSp?format=jpg&name=medium)
+
+---
+
+<!-- 
 **Day 18 | Tuesday, 18 January 2022**
 **Day 19 | Wednesday, 19 January 2022**
 **Day 20 | Thursday, 20 January 2022**
