@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Changa:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap");
 
 * {
-  font-family: "Changa", sans-serif;
+  font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -11,7 +11,6 @@ body {
 
 h1 {
   font-size: 40px;
-  position: absolute;
   width: 100%;
   top: 29px;
 
@@ -27,6 +26,17 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 
+#capture {
+  background-color: #fff;
+}
+/* #capture:after {
+  content: ".";
+  background: transparent; 
+  display: block;
+  color: transparent;
+  position: absolute;
+} */
+
 .artboard {
   float: left;
   position: relative;
@@ -36,19 +46,15 @@ h1 {
 
   /* width: 1920px;
   height: 1080px; */
-  background: #f403032b;
 }
 
-.artboard > div {
-  /* width: 50px;
-    height: 50px;
-    min-width: 50px;
-    max-height: 50px; */
-  width: 605px;
+.artboard > div.colors div {
+  /* width: 605px; */
   width: 805px;
   height: 640px;
   position: absolute;
   border-radius: 9999px;
+  mix-blend-mode: difference;
 }
 
 .pink {
@@ -97,12 +103,30 @@ h1 {
 
 .container {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   flex-direction: row;
   flex-wrap: nowrap;
   align-content: center;
   justify-content: center;
   align-items: center;
+  background-color: #f3f3f6;
+}
+
+.control_group {
+  background: #fff;
+  position: fixed;
+  right: 15px;
+  top: 10%;
+  border-radius: 15px;
+  z-index: 1;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 25px;
 }
 
 .convert {
@@ -113,33 +137,40 @@ h1 {
   font-size: xx-large;
 }
 
-.selection {
-  width: 200px;
-  height: 200px;
-  background-color: #ffeb3b;
-  position: absolute;
-  cursor: move;
-  filter: invert(1);
-  mix-blend-mode: difference;
-  border-radius: 110px;
-  border: 40px solid red;
-}
-
-#canvas {
-  border: 1px solid #ffeb3b;
-}
-
 button {
+  display: flex;
+  flex-direction: column;
   position: fixed;
   top: 15px;
-  right: 15px;
-  padding: 5px 15px;
-  font-weight: 400;
-  font-family: "OpenSans";
+  right: 20px;
   border: 0;
   background: none;
+  cursor: pointer;
 }
 
 button img {
-  height: 36px;
+  height: 28px;
+  margin-bottom: 5px;;
 }
+
+/* animation */
+
+.animate {
+  -webkit-animation: animate 5s infinite;
+}
+
+@-webkit-keyframes animate {
+  0%,
+  100% {
+    -webkit-filter: contrast(10) blur(100px) hue-rotate(0deg);
+  }
+  50% {
+    -webkit-filter: contrast(10) blur(100px) hue-rotate(180deg);
+  }
+}
+
+/* .colors {
+  position: absolute;
+  top: -102px;
+  left: -333px;
+} */
