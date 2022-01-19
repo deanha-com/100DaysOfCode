@@ -187,8 +187,18 @@ I was intrigued by this and took a dive into their docs and syntax.
 
 ---
 
-<!-- 
 **Day 19 | Wednesday, 19 January 2022**
+
+Continued with the Gradient Image Maker project today, it's coming along nicely.
+
+Added a couple of range sliders for easy adjustments to alter the final render of the gradients using CSS filters.
+
+[Live demo](https://kodlr.com/gradient/)
+![Gradient Image Maker ](gradient-image-maker\screenshot.png).
+
+---
+
+<!-- 
 **Day 20 | Thursday, 20 January 2022**
 **Day 21 | Friday, 21 January 2022**
 **Day 22 | Saturday, 22 January 2022**
