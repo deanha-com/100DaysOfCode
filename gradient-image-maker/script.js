@@ -58,3 +58,25 @@ favcolor.addEventListener("input", (e) => {
   console.log(e.target.value);
   document.querySelector(".red").style.backgroundColor = e.target.value;
 });
+
+
+
+
+const aspectRatioButtons = document.querySelectorAll('.aspect_ratios a');
+aspectRatioButtons.forEach((v,k)=>{
+  console.log(v,k);
+
+
+})
+
+aspectRatioButtons.forEach(element => {
+  element.addEventListener('click', (e)=>{
+    e.preventDefault();
+    console.log(e.target.textContent);
+    artboard.style.aspectRatio = e.target.textContent;
+  })
+});
+
+
+
+// aspect-ratio: 16 / 9;

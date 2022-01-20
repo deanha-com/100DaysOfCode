@@ -199,8 +199,14 @@ Added a couple of range sliders for easy adjustments to alter the final render o
 
 ---
 
-<!-- 
 **Day 20 | Thursday, 20 January 2022**
+
+
+
+
+---
+
+<!-- 
 **Day 21 | Friday, 21 January 2022**
 **Day 22 | Saturday, 22 January 2022**
 **Day 23 | Sunday, 23 January 2022**

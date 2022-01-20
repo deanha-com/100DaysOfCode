@@ -40,12 +40,32 @@ h1 {
 .artboard {
   float: left;
   position: relative;
+  width: auto;
+  height: 85vh;
 
-  width: 800px;
-  height: 800px;
+  aspect-ratio: 1 / 1; /* default */
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.21s ease;
+  -moz-transition: all 0.21s ease;
+  -ms-transition: all 0.21s ease;
+  -o-transition: all 0.21s ease;
+}
 
-  /* width: 1920px;
-  height: 1080px; */
+.controls.aspect_ratios {
+  background: #fff;
+  position: fixed;
+  left: 15px;
+  top: 10%;
+  border-radius: 15px;
+}
+
+.aspect_ratios a {
+  text-decoration: none;
+  width: 50px;
+  height: 20px;
+  padding: 2px 4px;
+  border: 1px solid #e5e5e5;
+  margin: 5px;
 }
 
 .artboard > div.colors div {
@@ -150,7 +170,7 @@ button {
 
 button img {
   height: 28px;
-  margin-bottom: 5px;;
+  margin-bottom: 5px;
 }
 
 /* animation */
