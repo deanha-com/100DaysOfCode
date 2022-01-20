@@ -194,7 +194,8 @@ Continued with the Gradient Image Maker project today, it's coming along nicely.
 Added a couple of range sliders for easy adjustments to alter the final render of the gradients using CSS filters.
 
 [Live demo](https://kodlr.com/gradient/)
-![Gradient Image Maker ](gradient-image-maker\screenshot.png).
+
+![Gradient Image Maker ](gradient-image-maker/screenshot.png).
 
 ---
 
