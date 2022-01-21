@@ -201,8 +201,7 @@ Added a couple of range sliders for easy adjustments to alter the final render o
 
 **Day 20 | Thursday, 20 January 2022**
 
-
-
+Carried on with the gradient app, did some study on the SoloLearn and received a few challenges via the app to compete with other users (pretty addictive really). 😃
 
 ---
 
