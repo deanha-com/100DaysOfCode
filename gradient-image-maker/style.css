@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap");
-
 * {
   font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
 }
+
 body {
   text-align: center;
 }
@@ -62,11 +62,12 @@ h1 {
 
 .aspect_ratios a {
   text-decoration: none;
-  width: 50px;
-  height: 20px;
-  padding: 2px 4px;
+  min-width: 50px;
+  padding: 2px;
   border: 1px solid #e5e5e5;
   margin: 5px;
+  color: #444;
+  font-size: 13px;
 }
 
 .aspect_ratios a:hover {

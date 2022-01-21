@@ -72,8 +72,8 @@ aspectRatioButtons.forEach((v,k)=>{
 aspectRatioButtons.forEach(element => {
   element.addEventListener('click', (e)=>{
     e.preventDefault();
-    console.log(e.target.textContent);
-    artboard.style.aspectRatio = e.target.textContent;
+    console.log(e.target.getAttribute('data-ratio'));
+    artboard.style.aspectRatio = e.target.getAttribute('data-ratio');
   })
 });
 
