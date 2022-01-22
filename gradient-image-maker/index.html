@@ -20,9 +20,10 @@
 <body>
     <!-- <h1>Gradient Image Maker</h1> -->
     <!-- <canvas id="canvas" width="800" height="800"></canvas> -->
+    <div class="layout grid">
 
-    <div class="container">
-        <!-- <div class="overflow">
+        <div class="container">
+            <!-- <div class="overflow">
             <div class="artboard">
                 <div class="pink"></div>
                 <div class="red"></div>
@@ -30,105 +31,143 @@
                 <div class="green"></div>
             </div>
         </div> -->
-        <!-- <div class="convert">👉</div> -->
+            <!-- <div class="convert">👉</div> -->
 
-        <div id="capture" class="overflow">
-            <div class="artboard blur">
-                <!-- <img src="./pawel-czerwinski-XQqd6JKDkSM-unsplash.jpg" alt="" width="100%" height="100%"> -->
-                <div class="colors">
-                    <!-- <div class="red"></div> -->
-                    <div class="pink"></div>
-                    <div class="red"></div>
-                    <div class="blue"></div>
-                    <div class="green"></div>
+
+            <div class="frame">
+                <div id="capture" class="overflow">
+                    <div class="artboard blur">
+                        <!-- <img src="./pawel-czerwinski-XQqd6JKDkSM-unsplash.jpg" alt="" width="100%" height="100%"> -->
+                        <div class="colors">
+                            <!-- <div class="red"></div> -->
+                            <div class="pink"></div>
+                            <div class="red"></div>
+                            <div class="blue"></div>
+                            <div class="green"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="tools_section">
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'adjustments')">Adjustments</button>
+                <button class="tablinks" onclick="openCity(event, 'canvas')">Canvas</button>
+                <button id="download-image" onclick="saveImage()"><img src="./file-download.png" alt=""></button>
+            </div>
+
+            <div id="canvas" class="tabcontent">
+                <div class="controls aspect_ratios">
+                    <br>
+                    <a href="#" data-ratio="2/1">2 : 1</a>
+                    <a href="#" data-ratio="16/9">16 : 9</a>
+                    <a href="#" data-ratio="3/2">3 : 2</a>
+                    <a href="#" data-ratio="4/3">4 : 3</a>
+                    <a href="#" data-ratio="1/1">1 : 1</a>
+                    <a href="#" data-ratio="3/4">3 : 4</a>
+                    <a href="#" data-ratio="2/3">2 : 3</a>
+                    <a href="#" data-ratio="9/16">9 : 16</a>
+                    <a href="#" data-ratio="1/2">1 : 2</a>
                 </div>
             </div>
+
+            <div id="adjustments" class="tabcontent" style="display: block">
+                <div class="control_group">
+                    <div class="controls">
+                        <label for="hue-rotate">Hue</label>
+                        <input name="hue-rotate" type="range" min="0" max="360" value="0" class="slider" id="hue_rotate">
+                        <span class='data-value'>0</span>
+                    </div>
+
+                    <div class="controls">
+                        <label for="blur">Blur</label>
+                        <input name="blur" type="range" min="30" max="500" value="30" class="slider"
+                            id="blur">
+                        <span class='data-value'>0</span>
+                    </div>
+
+                    <div class="controls">
+                        <label for="scale">Scale</label>
+                        <input name="scale" type="range" min="30" max="500" value="30" class="slider">
+                        <span class='data-value'>0</span>
+                    </div>
+
+                    <div class="controls">
+                        <label for="skew">Skew</label>
+                        <input name="skew" type="range" min="30" max="500" value="30" class="slider">
+                        <span class='data-value'>0</span>
+                    </div>
+
+                    <div class="controls">
+                        <label for="contrast">Contrast</label>
+                        <input name="contrast" type="range" min="0" max="2" value="1" step="0.01"class="slider">
+                        <span class='data-value'>1</span>
+                    </div>
+
+                    <div class="controls">
+                        <label for="saturate">Saturate</label>
+                        <input name="saturate" type="range" min="0" max="11" value="1" step="0.01" class="slider">
+                        <span class='data-value'>1</span>
+                    </div>
+
+                    <div class="controls">
+                        <label for="size-range">Rotate</label>
+                        <input name="size-range" type="range" min="30" max="500" value="30" class="slider" id=""
+                            disabled>
+                        <span class='data-value'>0</span>
+                    </div>
+
+                    <div class="controls">
+                        <label for="size-range">Translate</label>
+                        <span>X</span>
+                        <input name="size-range" type="range" min="-100" max="100" value="0" class="slider" id=""
+                            disabled->
+                        <span>Y</span>
+                        <input name="size-range" type="range" min="-100" max="100" value="0" class="slider" id=""
+                            disabled>
+                        <span class='data-value'>0</span>
+                    </div>
+
+                    <div class="controls">
+                        <label for="favcolor">Color 1</label>
+                        <input type="color" id="favcolor" name="favcolor" value="#ff8db3">
+                        <br>
+                        <label for="favcolor">Color 2</label>
+                    <input type="color" id="favcolor2" name="favcolor" value="#cc7ff5">
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <!-- <div id="Tokyo" class="tabcontent">
+          <h3>Tokyo</h3>
+          <p>Tokyo is the capital of Japan.</p>
+        </div> -->
+
         </div>
-        <div class="control_group">
-            <div class="controls">
-                <label for="range-range">Hue</label>
-                <input name="hue-range" type="range" min="0" max="360" value="0" class="slider" id="hue_range">
-                <div class="range_val">0</div>
-            </div>
-
-            <div class="controls">
-                <label for="size-range">Blur</label>
-                <input name="size-range" type="range" min="30" max="500" value="30" class="slider" id="size_range">
-                <div class="size_val">30</div>
-            </div>
-
-            <div class="controls">
-                <label for="size-range">Scale</label>
-                <input name="size-range" type="range" min="30" max="500" value="30" class="slider" id="" disabled>
-                <div class="size_val">30</div>
-            </div>
-
-            <div class="controls">
-                <label for="size-range">Skew</label>
-                <input name="size-range" type="range" min="30" max="500" value="30" class="slider" id="" disabled>
-                <div class="size_val">30</div>
-            </div>
-
-            <div class="controls">
-                <label for="size-range">Contrast</label>
-                <input name="size-range" type="range" min="30" max="500" value="30" class="slider" id="" disabled>
-                <div class="size_val">30</div>
-            </div>
-
-            <div class="controls">
-                <label for="size-range">Saturation</label>
-                <input name="size-range" type="range" min="30" max="500" value="30" class="slider" id="" disabled>
-                <div class="size_val">30</div>
-            </div>
-
-            <div class="controls">
-                <label for="size-range">Rotate</label>
-                <input name="size-range" type="range" min="30" max="500" value="30" class="slider" id="" disabled>
-                <div class="size_val">30</div>
-            </div>
-
-            <div class="controls">
-                <label for="size-range">Translate</label>
-                <span>X</span>
-                <input name="size-range" type="range" min="-100" max="100" value="0" class="slider" id="" disabled->
-                <span>Y</span>
-                <input name="size-range" type="range" min="-100" max="100" value="0" class="slider" id="" disabled>
-                <div class="size_val">30</div>
-            </div>
-
-            <div class="controls">
-                <label for="favcolor">Color 1</label>
-                <input type="color" id="favcolor" name="favcolor" value="#ff8db3">
-                <br>
-                <!-- <label for="favcolor">Color 2</label>
-                <input type="color" id="favcolor2" name="favcolor" value="#cc7ff5"> -->
-            </div>
-            
-            <div class="controls aspect_ratios">
-                <span>Aspect Ratio</span>
-                <br>
-                <a href="#" data-ratio="16/9">16 : 9</a>
-                <a href="#" data-ratio="3/2">3 : 2</a>
-                <a href="#" data-ratio="4/3">4 : 3</a>
-                <a href="#" data-ratio="1/1">1 : 1</a>
-                <a href="#" data-ratio="3/4">3 : 4</a>
-                <a href="#" data-ratio="2/3">2 : 3</a>
-                <a href="#" data-ratio="9/16">9 : 16</a>
-            </div>
-            
-
-        </div>
-
-        <button onclick="saveImage()">
-            <img src="./file-download.png" alt="">PNG
-        </button>
     </div>
 
+
+    <button id="theme-toggle" onclick="toggleTheme()"></button>
 </body>
 <!-- 
     https://github.com/tsayen/dom-to-image
     https://github.com/eligrey/FileSaver.js/ 
     https://app.streamlinehq.com/icons/streamline-light?search=download%2Bimg
+
+
+    Similar Tools:
+    https://haikei.app/
+    https://www.blobmaker.app/
+    https://app.haikei.app/
+    https://getwaves.io/
+    https://mycolor.space/
+
 -->
 
 </html>
