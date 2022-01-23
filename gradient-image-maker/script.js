@@ -1,8 +1,5 @@
-// const artboard = document.querySelector(".artboard");
-
-// artboard.addEventListener("click", function (e) {
-//   //   alert(e.target);
-// });
+const artboard = document.querySelector(".artboard");
+const color_1 = document.querySelector('#color_1')
 
 function saveImage () {
   var node = document.getElementById('capture')
@@ -29,97 +26,76 @@ function saveImage () {
 }
 
 /**
- * slider adjustments
+ * Slider Adjustments
  **/
+
+function getAdjustmentValue (prop) {
+  return document.querySelector('[name=' + prop + ']').nextElementSibling
+    .innerText
+}
 
 function setAdjustments (target) {
   targetEl = document.querySelector(target)
 
   targetEl.addEventListener('input', e => {
-    console.log('-----', e.target.value)
     console.log('----->>>', e.target.name)
-    e.target.nextElementSibling.innerText = e.target.value + '****'
+    console.log('----->>>', e.target.value)
+    e.target.nextElementSibling.innerText = e.target.value
     // targetEl.textContent = e.targetEl.value
+
+    console.log('=================== ', e)
 
     switch (e.target.name) {
       case 'blur':
-        value = e.target.value + 'px';
+        value = e.target.value + 'px'
         break
       case 'hue-rotate':
-        value = e.target.value + 'deg';
+        value = e.target.value + 'deg'
         break
 
       default:
-        value = e.target.value;
+        value = e.target.value
         break
     }
 
-    let regrxpattern = /([a-zA-Z_{1}][-a-zA-Z0-9_]+)\(([^)]+)\)/g // for matching the filter properties we want to replace
-    
+    // FILTERS
+    artboard.style['-webkit-filter'] = `
+      contrast(${+getAdjustmentValue('contrast')})
+      blur(${+getAdjustmentValue('blur')}px)
+      hue-rotate(${+getAdjustmentValue('hue-rotate')}deg)
+      saturate(${+getAdjustmentValue('saturate')})
+      blur(${+getAdjustmentValue('blur')/5}px)
+    `
 
-    // artboard.style.filter.replace('blur','-------');
-    aaa = artboard.style.filter.replaceAll(e.target.name,'_');
-    console.log('pppppppppppp ',aaa)
-
-    artboard.style.filter = `${e.target.name}(${value})`;
-    // artboard.style.filter = `${artboard.style.filter} ${e.target.name}(${value})`;
-
-    // artboard.style.filter =
-    // `contrast(141)
-    // hue-rotate(${e.target.value} deg)
-    // blur(${e.target.value}px)
-    // contrast(${e.target.value})
-    // brightness(${e.target.value})
-    // `;
-    console.log(e.target.value)
-    console.log('>>>>')
+    // TRANSFORMS
+    artboard.style['transform'] = `
+      scale(${+getAdjustmentValue('scale')})
+      rotate(${+getAdjustmentValue('rotate')}deg)
+      translateX(${+getAdjustmentValue('translateX')}%)
+      translateY(${+getAdjustmentValue('translateY')}%)
+      skewX(${+getAdjustmentValue('skewX')}deg)
+      skewY(${+getAdjustmentValue('skewY')}deg)
+    `
   })
 }
-
 setAdjustments('.control_group')
 
-// -----------------------------------------------------------------
 
-const hueSlider = document.querySelector('#hue_rotate')
-const artboard = document.querySelector('.artboard')
+/**
+ * color-node-change
+ **/
 
-// hueSlider.addEventListener('input', e => {
-//   hueSlider.nextElementSibling.innerText = e.target.value
-//   artboard.style.filter =
-//     'contrast(141) blur(' +
-//     sizeSlider.nextElementSibling.innerText +
-//     'px) hue-rotate(' +
-//     e.target.value +
-//     'deg)'
-//   console.log(e.target.value)
-// })
-
-// const sizeSlider = document.querySelector('#blur')
-// const sizeVal = document.querySelector('.size_val')
-
-// sizeSlider.addEventListener('input', e => {
-//   // sizeVal.textContent = e.target.value
-//   sizeSlider.nextElementSibling.innerText = e.target.value
-//   artboard.style.filter =
-//     'contrast(141) blur(' +
-//     e.target.value +
-//     'px) hue-rotate(' +
-//     hueSlider.nextElementSibling.innerText +
-//     'deg)'
-//   console.log(e.target.value)
-// })
-
-const favcolor = document.querySelector('#favcolor')
-favcolor.addEventListener('input', e => {
+ color_1.addEventListener('input', e => {
   console.log(e.target.value)
-  document.querySelector('.red').style.backgroundColor = e.target.value
+  document.querySelector('.layer_1').style.backgroundColor = e.target.value
 })
+
 
 /**
  * aspect-ratio
  **/
-
 const aspectRatioButtons = document.querySelectorAll('.aspect_ratios a')
+
 aspectRatioButtons.forEach((v, k) => {
   console.log(v, k)
 })
@@ -132,7 +108,11 @@ aspectRatioButtons.forEach(element => {
   })
 })
 
-function openCity (evt, cityName) {
+
+/**
+ * Tabs & Toggles
+ **/
+function toggleTabs (evt, tabName) {
   var i, tabcontent, tablinks
   tabcontent = document.getElementsByClassName('tabcontent')
   for (i = 0; i < tabcontent.length; i++) {
@@ -142,7 +122,8 @@ function openCity (evt, cityName) {
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(' active', '')
   }
-  document.getElementById(cityName).style.display = 'block'
+
+  document.getElementById(tabName).style.display = 'block'
   evt.currentTarget.className += ' active'
 }
 

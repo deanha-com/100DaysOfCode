@@ -29,27 +29,19 @@ h1 {
 #capture {
   background-color: #fff;
 }
-/* #capture:after {
-  content: ".";
-  background: transparent; 
-  display: block;
-  color: transparent;
-  position: absolute;
-  border: 15px solid red;
-} */
 
 .artboard {
   float: left;
   position: relative;
   width: auto;
   height: 85vh;
-
-  aspect-ratio: 16 / 9; /* default */
-  transition: all 0.2s ease;
-  -webkit-transition: all 0.21s ease;
-  -moz-transition: all 0.21s ease;
-  -ms-transition: all 0.21s ease;
-  -o-transition: all 0.21s ease;
+  aspect-ratio: 1 / 1;
+  /*default*/
+  transition: all 0.1s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
 }
 
 .dark .aspect_ratios a {
@@ -83,17 +75,16 @@ h1 {
 }
 
 .artboard > div.colors div {
-  /* mix-blend-mode: difference; */
-  mix-blend-mode: lighten;
+  mix-blend-mode: difference;
+  /* mix-blend-mode: lighten; */
 }
 
-.pink {
-  top: -180x;
-  left: 800px;
+.yellow {
+  top: -180px;
+  left: -350px;
   height: 752px !important;
   width: 557px;
-  background-color: #d503ac6e;
-  background-color: #ef18b1;
+  background-color: #ffbb31;
 }
 
 .red {
@@ -175,6 +166,13 @@ h1 {
   padding: 10px 25px;
 }
 
+input.slider {
+  align-items: center;
+  overflow: hidden;
+  width: 80%;
+  cursor: pointer;
+}
+
 .convert {
   display: inline-block;
   padding: 40px;
@@ -183,14 +181,9 @@ h1 {
   font-size: xx-large;
 }
 
-/* .tab button::after {
-  content: "|";
-} */
-
 #download-image {
   cursor: pointer;
-  background-color: #c78500;
-  filter: invert(1);
+  background-color: #fff;
 }
 
 #download-image img {
@@ -242,13 +235,7 @@ h1 {
 }
 
 /* TABS */
-
 .tools_section {
-  /* position: fixed;
-  top: 0;
-  right: 0;
-  background: white;
-  min-width: 8vw; */
   height: -webkit-fill-available;
   z-index: 1;
 }
@@ -260,12 +247,14 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  outline: 1px solid #f1f1f1;
 }
 
 .dark .tab,
 .tab button {
   color: #fff;
   background-color: #282828;
+  outline: none;
 }
 
 /* Style the buttons inside the tab */
@@ -273,13 +262,16 @@ h1 {
   background-color: inherit;
   color: #282828;
   flex: auto;
-  /* float: left; */
   border: none;
   outline: 1px solid rgb(151 151 151 / 20%);
   cursor: pointer;
   padding: 5px 15px;
-  transition: 0.3s;
+  transition: 0.2s;
   font-size: 17px;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
 }
 
 /* Change background color of buttons on hover */
@@ -296,6 +288,10 @@ h1 {
 }
 
 /* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ffffff;
+}
+
 .dark .tab button.active {
   color: #f9f9f9;
   background-color: #3a3939;
@@ -326,8 +322,7 @@ h1 {
   align-content: center;
   justify-content: center;
   align-items: center;
-  /*margin: 10px;
-  */
+
   background-size: auto;
   background-repeat: no-repeat;
   background-position: center;
@@ -363,6 +358,21 @@ img.light-icon {
   grid-template-columns: 5fr 1fr;
 }
 
-/* .controls > * {
-  flex: auto;
-} */
+.hidden {
+  display: none;
+}
+
+.credit {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  font-size: small;
+  color: #686868;
+  filter: invert(1);
+  -webkit-filter: invert(1);
+}
+
+a {
+  color: #686868;
+  text-decoration: none;
+}
