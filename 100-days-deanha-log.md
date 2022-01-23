@@ -237,8 +237,22 @@ Next to do is to make the individual sliders work on sliding, make it mobile-fri
 
 ---
 
-<!-- 
 **Day 23 | Sunday, 23 January 2022**
+
+I've completed the MVP for the Gradient Image Maker project today. 😁
+
+I ended up making a bunch of gradient backgrounds using this, with all the adjustment controls you can tweak the outcome to your satisfaction. 😉
+
+![Gradient Image Maker](https://pbs.twimg.com/media/FJ0YGM_XoAcWmww?format=jpg&name=4096x4096)
+
+
+Feel free to test it out and let me know if you have any feedback.👍😀
+
+[LIVE DEMO](https://deanha.com/demo/gradient-image-maker/)
+
+---
+
+<!-- 
 **Day 24 | Monday, 24 January 2022**
 **Day 25 | Tuesday, 25 January 2022**
 **Day 26 | Wednesday, 26 January 2022**
