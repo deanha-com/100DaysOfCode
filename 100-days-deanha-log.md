@@ -205,9 +205,39 @@ Carried on with the gradient app, did some study on the SoloLearn and received a
 
 ---
 
-<!-- 
 **Day 21 | Friday, 21 January 2022**
+
+So today I’ve been reflecting on how I’m taking on this challenge. 
+
+And this quote pop in mind:
+
+“A jack of all trades is a master of none, but oftentimes better than a master of one.”
+
+I’m definitely for “jack of all trades”..
+
+
+And these are my trades in plan..
+![Full Stack Developer Map](https://pbs.twimg.com/media/FJqi0_9WQAgM_gs?format=jpg&name=large)
+
+Most of these I know and have touched upon, there are some gaps that I would like to fill within this 100 Days Challenge. And some new things that I want to add to the toolbox.
+
+Let's see how much of this we can cover in the remaining 79 days 🙂
+
+---
+
 **Day 22 | Saturday, 22 January 2022**
+
+Progressed on the Gradient app today, added dark/light theme switching and a control panel for adjustments.
+
+Did some D.R.Y refactoring, it was a productive day today. Was very much in the zone. 
+
+I spend a bit of time tweaking the look and feel of the UI as I was freestyling it. It would probably be quicker if I designed it all in Figma first. 
+
+Next to do is to make the individual sliders work on sliding, make it mobile-friendly, and allow exporting larger dimensions than the screen size.
+
+---
+
+<!-- 
 **Day 23 | Sunday, 23 January 2022**
 **Day 24 | Monday, 24 January 2022**
 **Day 25 | Tuesday, 25 January 2022**
