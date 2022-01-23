@@ -155,7 +155,7 @@ h1 {
 }
 
 .shadow {
-  box-shadow: 5px 30px 80px rgba(179, 179, 179, 0.35);
+ box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
 }
 
 .controls {
@@ -164,6 +164,9 @@ h1 {
   align-items: center;
   flex-wrap: wrap;
   padding: 10px 25px;
+  border: 1px solid #70707026;
+  margin: 15px 30px;
+  border-radius: 13px;
 }
 
 input.slider {
