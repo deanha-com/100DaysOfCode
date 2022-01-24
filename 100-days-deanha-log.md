@@ -252,8 +252,20 @@ Feel free to test it out and let me know if you have any feedback.👍😀
 
 ---
 
-<!-- 
 **Day 24 | Monday, 24 January 2022**
+
+Progress on more reading and filling in some gaps. I came across Event Propagation - Capturing vs Bubbling
+
+Bubbling = **Up** the DOM
+Capturing = **Down** the DOM
+
+Event propagation mode is set to "bubbling" by default.
+
+![JavaScript Event Propagation](https://pbs.twimg.com/media/FJ58cKiWUAMBajd?format=jpg&name=900x900)
+
+--- 
+
+<!-- 
 **Day 25 | Tuesday, 25 January 2022**
 **Day 26 | Wednesday, 26 January 2022**
 **Day 27 | Thursday, 27 January 2022**
