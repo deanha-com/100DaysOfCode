@@ -263,10 +263,22 @@ Event propagation mode is set to "bubbling" by default.
 
 ![JavaScript Event Propagation](https://pbs.twimg.com/media/FJ58cKiWUAMBajd?format=jpg&name=900x900)
 
+
+---
+
+**Day 25 | Tuesday, 25 January 2022**
+
+Started building an API using NodeJS + Express. 🏗
+
+Looked into Authentication and Authorisation steps and the use of JWT. 📕
+
+Very interesting, will give JWT a try to see it’s benefits 👌🤔
+
+#100daysofcodechallenge #techtwitter
+
 --- 
 
 <!-- 
-**Day 25 | Tuesday, 25 January 2022**
 **Day 26 | Wednesday, 26 January 2022**
 **Day 27 | Thursday, 27 January 2022**
 **Day 28 | Friday, 28 January 2022**
