@@ -248,7 +248,7 @@ I ended up making a bunch of gradient backgrounds using this, with all the adjus
 
 Feel free to test it out and let me know if you have any feedback.👍😀
 
-[LIVE DEMO](https://deanha.com/demo/gradient-image-maker/)
+[Live Demo](https://deanha.com/demo/gradient-image-maker/)
 
 ---
 
@@ -274,12 +274,22 @@ Looked into Authentication and Authorisation steps and the use of JWT. 📕
 
 Very interesting, will give JWT a try to see it’s benefits 👌🤔
 
-#100daysofcodechallenge #techtwitter
-
 --- 
 
-<!-- 
 **Day 26 | Wednesday, 26 January 2022**
+
+Build a mini tool to use in Instagram comments.
+
+You can't break your sentences to new lines in the comment reply when using the app on mobile.
+
+Being able to add new lines can help structure your comments, making it more easy to read.
+
+
+[Live Demo - InstaCommenter](https://bit.ly/34ejBak)
+
+---
+
+<!-- 
 **Day 27 | Thursday, 27 January 2022**
 **Day 28 | Friday, 28 January 2022**
 **Day 29 | Saturday, 29 January 2022**

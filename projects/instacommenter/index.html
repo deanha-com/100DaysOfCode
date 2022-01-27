@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>InstaCommenter</title>
+    <meta name="robots" content="noindex" />
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Text|Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+
+</head>
+<body>
+    <header class="navbar">
+        <section class="navbar-section">
+            <!-- 
+                <a href="#" class="btn btn-link">InstaGetter App</a>
+                <a href="#" class="btn btn-link">Examples</a>
+            -->
+        </section>
+        <section class="navbar-center">
+            <h1>InstaCommenter</h1>
+        </section>
+        <section class="navbar-section">
+            <!-- 
+                <a href="#" class="btn btn-link">Twitter</a>
+                <a href="#" class="btn btn-link">GitHub</a> 
+            -->
+        </section>
+    </header>
+  
+    
+    <div class="container">
+        
+        <!-- form textarea control -->
+        <div class="form-group content">
+            <label class="form-label" for="content"></label>
+            <div class="buttons icons">
+                <!-- 
+                <button onclick="clearContent()"><span class="lnr lnr-cross"></span></button>
+                <button onclick="formatIt()"><span class="lnr lnr-sync"></span></button>
+                <button onclick="copyText()"><span class="lnr lnr-select"></span></button>
+                 -->
+                <a href="#" onclick="clearContent()"><img src="https://img.icons8.com/material/24/000000/erase--v2.png"></a>
+                <a href="#" onclick="formatIt()"><img src="https://img.icons8.com/material-outlined/24/000000/align-left.png"></a>
+                <a href="#" onclick="copyText()"><img src="https://img.icons8.com/material-outlined/24/000000/copy.png"></a>
+            </div>
+            <textarea class="form-input" id="content" placeholder="Enter your comment with new/break lines, then click format text and then copy it to your Instragram comment" cols="30" rows="20"></textarea>
+            <!-- <span>remove watermarks</span>
+            <label class="form-switch">
+                <input type="checkbox">
+                <i class="form-icon"></i>
+            </label> -->
+            <div class="buttons text-sm">
+                <button onclick="clearContent()">Clear</button>
+                <button onclick="formatIt()">Format Text</button>
+                <button onclick="copyText()">Copy</button>
+            </div>
+        </div>
+
+    </div>
+    
+
+    <style>
+
+        body {
+            /* background: #c14848;
+            background: linear-gradient(128deg, #ef4bad, #2b3677) no-repeat; */
+        }
+
+        header {
+            margin-top: 20px;
+            font-family: 'DM Serif Text', serif;
+            font-family: 'Pacifico', cursive;
+            font-size: 4em;
+        }
+        img{
+            max-width: 50px;
+        }
+        * {
+            /* font-family: monospace !important; */
+            font-size: 1.1em;
+        }
+        div.content {
+            max-width: 85%;
+            margin: 0 auto;
+        }
+        textarea {
+            height: 60vh !important;
+            width: 100%;
+            margin: 0 auto;
+            padding: 10px 15px;
+        }
+        button {
+            background: none;
+            border: 0;
+            padding: 5px 10px;
+            color: #03A9F4;
+            border-radius: 0px;
+            font-family: Arial;
+            font-size: xx-large;
+            border-radius: 12px;
+
+        }
+
+        .buttons {
+            text-align: right;
+        }
+
+        .buttons.text-sm button {
+            font-size: 16px;
+            border: solid 1px #d8d8d8;
+            padding: 3px 10px;
+        }
+
+        .buttons.text-sm {
+            margin-bottom: 1em;
+        }
+
+        .buttons.icons button {
+            font-size: 18px;
+        }
+
+        .buttons a {
+            margin-left: 30px;
+        }
+
+    </style>
+
+    <script>
+            // Clear the content
+            function clearContent() {
+                console.log('clicked');
+                document.getElementById("content").value = "";
+            }
+
+            // for formating of instagram comments.. when you want to have new lines
+            function formatIt() {
+                words = document.getElementById("content").value;
+                words = words.replace(/⠀\n/g, "\n");
+                words = words.replace(/\n-----\nby InstaCommenter/g, "");
+                words = words.replace(/\n/g, "⠀\n");
+                // document.getElementById("content").value = words + '\n-----\nby InstaCommenter';
+                document.getElementById("content").value = words;
+                console.log('converted string');
+            }
+
+            function copyText() {
+                    /* Get the text field */
+                    var copyText = document.getElementById("content");
+
+                    /* Select the text field */
+                    copyText.select();
+                    copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+
+                    /* Copy the text inside the text field */
+                    document.execCommand("copy");
+                    console.log('copied to clipboard');
+                }
+    </script>
+</body>
+
+</html>
+<!-- 
+// NOTES
+
+https://icons8.com/icon/set/align/material-outlined
+-->
