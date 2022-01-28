@@ -195,7 +195,7 @@ Added a couple of range sliders for easy adjustments to alter the final render o
 
 [Live demo](https://kodlr.com/gradient/)
 
-![Gradient Image Maker ](gradient-image-maker/screenshot.png).
+![Gradient Image Maker ](/projects/gradient-image-maker/screenshot.png).
 
 ---
 
