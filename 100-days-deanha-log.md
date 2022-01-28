@@ -289,8 +289,17 @@ Being able to add new lines can help structure your comments, making it more eas
 
 ---
 
-<!-- 
 **Day 27 | Thursday, 27 January 2022**
+
+Had a busy day today, so took it easy and did some reading on GitHub Actions and researching on the topic of CI/CD.
+
+Have you implemented CI/CD in your pipeline?
+
+If so what tools do you use and why? 🤔
+
+---
+
+<!-- 
 **Day 28 | Friday, 28 January 2022**
 **Day 29 | Saturday, 29 January 2022**
 **Day 30 | Sunday, 30 January 2022**
