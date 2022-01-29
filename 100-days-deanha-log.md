@@ -318,11 +318,17 @@ Mobile:
 - Ionic Framework
 - ReactNative
 
+---
+
+**Day 29 | Saturday, 29 January 2022**
+
+Today I solved some Kata using JavaScript on https://codewars.com. Excellent practice for problem-solving in programming.
+
+You get to see other people's solutions to the problem after you submitted yours. Great way to learn from others' techniques. 👍
 
 ---
 
 <!-- 
-**Day 29 | Saturday, 29 January 2022**
 **Day 30 | Sunday, 30 January 2022**
 **Day 31 | Monday, 31 January 2022**
 
