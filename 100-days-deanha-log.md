@@ -299,8 +299,29 @@ If so what tools do you use and why? 🤔
 
 ---
 
-<!-- 
 **Day 28 | Friday, 28 January 2022**
+
+Revisited an old project that I created using Electron JS. 
+
+I'm surprised, at how you can "almost" build anything with Web Technologies these days. 🤯
+
+
+Some libraries/framework for different platforms:
+
+Desktop:
+- ElectronJS
+- NW.js
+- Meteor
+
+Mobile:
+- Flutter
+- Ionic Framework
+- ReactNative
+
+
+---
+
+<!-- 
 **Day 29 | Saturday, 29 January 2022**
 **Day 30 | Sunday, 30 January 2022**
 **Day 31 | Monday, 31 January 2022**
