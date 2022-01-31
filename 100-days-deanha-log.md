@@ -328,8 +328,17 @@ You get to see other people's solutions to the problem after you submitted yours
 
 ---
 
-<!-- 
 **Day 30 | Sunday, 30 January 2022**
+
+It was a difficult day trying to fit in a practical coding session. 👨‍💻 
+
+Instead, I did some real-life synchronous fetch(CNYGifts) preparing for the Lunar New Year around the corner. 🏃🥵
+
+The streets were festive this weekend. I see  __#FF0000__ everywhere 😅
+
+---
+
+<!-- 
 **Day 31 | Monday, 31 January 2022**
 
 **Day 32 | Tuesday, 1 Feb 2022**
