@@ -336,10 +336,24 @@ Instead, I did some real-life synchronous fetch(CNYGifts) preparing for the Luna
 
 The streets were festive this weekend. I see  __#FF0000__ everywhere 😅
 
+
+---
+
+**Day 31 | Monday, 31 January 2022**
+
+Sometimes, it’s best to utilise different technologies to get your desire outcome.
+
+The tech we choose depends on our priorities: Time, Security, Cost, Flexibility. 
+
+Like today, I had to use different form of transports to get to where I need to be. 🇸🇪
+
+![](https://pbs.twimg.com/media/FKd2qd7XEA83Cun?format=jpg&name=medium)
+
+![](https://pbs.twimg.com/media/FKd2qewXEAUY9kO?format=jpg&name=medium)
+
 ---
 
 <!-- 
-**Day 31 | Monday, 31 January 2022**
 
 **Day 32 | Tuesday, 1 Feb 2022**
 **Day 33 | Wednesday, 2 Feb 2022**
