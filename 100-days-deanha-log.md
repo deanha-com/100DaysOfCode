@@ -353,9 +353,24 @@ Like today, I had to use different form of transports to get to where I need to 
 
 ---
 
+**Day 32 | Tuesday, 1 Feb 2022**
+
+Happy Chinese New Year! - 2022 Year of the Tiger 🐯
+
+Created a CSS Art with the CNY elements. Gold coins, red envelopes (lai see), Tiger, and the use of the color red bringing everyone luck. 😁
+
+
+Created a CSS Art with the CNY elements. Gold coins, red envelopes, tiger, and the use of the color red - bringing everyone luck.Grinning face with smiling eyes
+
+Live Demo:  https://bit.ly/3ojYVFp
+
+![](https://pbs.twimg.com/media/FKoJ5IQXsAoTlnb?format=jpg&name=4096x4096)
+
+---
+
+
 <!-- 
 
-**Day 32 | Tuesday, 1 Feb 2022**
 **Day 33 | Wednesday, 2 Feb 2022**
 **Day 34 | Thursday, 3 Feb 2022**
 **Day 35 | Friday, 4 Feb 2022**
